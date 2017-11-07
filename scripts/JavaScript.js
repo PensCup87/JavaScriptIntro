@@ -7,12 +7,12 @@
 
 //console.log("Hello " + name);
 
-function helloWorld(){
-    var greeting = "Hello Hello!";
-    alert(greeting);
-}
-//Call the function
-helloWorld();
+//function helloWorld(){
+//    var greeting = "Hello Hello!";
+//    alert(greeting);
+//}
+////Call the function
+//helloWorld();
 
 function add (a, b){
     return a + b;
@@ -34,3 +34,30 @@ function yourName(name) {
     return "Hello " + name;
 }
 console.log(yourName("Baba Booey"));
+
+function updateDiv() {
+    var outputString = "Hello, Hello. Welcome to my page";
+    document.getElementById("sectionOne").innerHTML = "<p>" + outputString + "<p>";
+}
+
+function swap() {
+    var imageSrc = document.getElementById("swapImage").src;
+    
+    if (imageSrc.includes("JesseGrinding")) {
+        document.getElementById("swapImage").src = "images/WCC.jpg";
+    }
+    else {
+        document.getElementById("swapImage").src = "images/JesseGrinding.jpg"
+    }
+}
+
+function printArray() {
+    var favFoods = ["Pizza", "Strip Steak", "Chocolate Gelato"];
+    var outputText = "<ul>";
+
+    for (i = 0; i < favFoods.length; i++) {
+        outputText += "<li>" + favFoods[i] + "</li>";
+    }
+    outputText += "</ul>";
+    document.getElementById("sectionTwo").innerHTML += outputText;
+}

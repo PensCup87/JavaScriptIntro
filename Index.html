@@ -7,16 +7,26 @@
 </head>
 <body>
     <h1>JavaScript Intro</h1>
-    <div>
+    <div id="sectionOne">
         <p>
             Now, our operation is small, but there is a lot of potential for aggressive expansion. 
             So which of you fine gentlemen would like to join our team? Oh. 
             There's only one spot open right now, so we're gonna have... tryouts.
         </p>
+        <!--when the button is clicked, the function updateDiv() runs-->
     </div>
+    <button onclick="updateDiv()">Update Div</button>
     <script>
         //allows JAVASCRIPT TO RUN
         //alert("Hello Batman");
     </script>
+
+    <img onmouseover="swap()" id="swapImage" src="images/JesseGrinding.jpg" height="500" width="750"/>
+    <button onclick="swap()">Swap Image</button>
+
+    <div id="sectionTwo">
+
+    </div>
+    <button onclick="printArray()">Print Array</button>
 </body>
 </html>
