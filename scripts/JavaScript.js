@@ -18,3 +18,19 @@ function add (a, b){
     return a + b;
 }
 console.log(add(4, 5));
+//
+//
+//
+//
+
+//USING AN ANNOMYOUS FUNCTION Because function(a, b) does not have a name - HAS 1 PURPOSE
+var otherFunction = function (a, b) {
+    return a + b;
+
+    console.log(otherFunction(4, 5));
+}
+
+function yourName(name) {
+    return "Hello " + name;
+}
+console.log(yourName("Baba Booey"));
